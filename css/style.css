@@ -423,6 +423,7 @@ img {
     background-color: var(--color-link) ;
     border: 3px solid #D1A9F0;
     color: var(--color-text);
+  
  }
  .link--effects:active {
      background-color: var(--color-active);
@@ -625,11 +626,23 @@ img {
     background-image: url(/img/Group\ 23.svg);
     background-repeat: no-repeat;
 }
-.swiper-button-next-custom:focus {
+.swiper--next:focus {
+     outline: none;
+}
+.swiper--next:hover {
+    background-image: url(/img/next-in-slaider-hover.svg);
+}
+.swiper--next:active {
+    background-image: url(/img/next-in-slaider-clicked.svg);
+}
+.swiper--prev:focus {
     outline: none;
-    background-position: center;
-    border: 2px solid #9D5CD0;
-    border-radius: 50%;
+}
+.swiper--prev:hover {
+   background-image: url(/img/prev-in-slaider-hover.svg);
+}
+.swiper--prev:active {
+   background-image: url(/img/prev-in-slaider-clicked.svg);
 }
 .swiper-pagination-custom {
     width: 47px;
@@ -1328,7 +1341,7 @@ img {
 }
 
 .swiper3 {
-    width: 1451px;
+    width: 1453px;
 }
 .swiper3-slide {
     display: block;
