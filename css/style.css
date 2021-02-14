@@ -101,20 +101,31 @@ gitimg {
 
 /*header*/
 .header {
-   
-  }
+   position: absolute;
+   width: 100%;
+   z-index: 5;
+  
+}
+.header__top {
+    background-color: black; 
+    padding: 30px 0;
+}
 
 .header__container {
     display: flex;
     justify-content: space-between ; 
     align-items: center;
-    min-height: 100px; 
-    background-color: #000000;
+    /* min-height: 100px;  */
+    /* background-color: #000000; */
     padding-left: 160px;
     padding-right: 156px;
  }
 .container {
-    max-width: 1920px;
+    width: 100%;
+	max-width: 1630px;
+	margin: 0 auto;
+	padding: 0 15px;
+    /* max-width: 1920px; */
     /* margin: 0 auto; */
    
 }
@@ -172,7 +183,10 @@ gitimg {
     line-height: 25px;
     color: #FFFFFF;
 }
-
+.header__bottom {
+    padding: 21px 0;
+    background: rgba(0, 0, 0, 0.4);
+}
 /*main banner*/
 .anim-a {
     position: relative; 
@@ -216,14 +230,18 @@ gitimg {
 
 }
 
+.banner {
+    padding-top: 170px;
+    background-image: url(../img/birmingham-museums-trust-MK_98NuC4-4-unsplash\ 2.jpg);
+    background-size: cover;
+}
+
 
 .banner-menu {
     display: flex;
     justify-content: space-between;
-    background: rgba(0, 0, 0, 0.4);;
-    max-width: 1920px;
-    height: 70px;
-    padding: 0 158px;
+    /* max-width: 1920px; */
+    padding: 0 0px;
 }
 .nav__link:focus {
     outline: var(--link-focus);
@@ -231,13 +249,11 @@ gitimg {
 }
 .banner__container {
     position: relative;
-    background-image: url(../img/birmingham-museums-trust-MK_98NuC4-4-unsplash\ 2.jpg);
     height: 700px;
 }
 
 .banner__menu {
     position: relative;
-    padding-top: 23px;
     margin: 0;
 	list-style: none;
 }
@@ -246,7 +262,6 @@ gitimg {
     background-color: inherit;
 }
 .banner-search {
-    padding-top: 20px; 
     color: var(--color-text);
   }
 .banner-search:hover {
