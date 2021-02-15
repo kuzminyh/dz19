@@ -33,9 +33,8 @@
         <div class="header__top">
             <div class="container header__container ">
                 <!-- <div class="header_container__logo"> -->
-                <a class="header__logo logo">
-                    <img class="logo__item" src="img/Blanchard.png" alt="">
-                    <img class="logo__item" src="img/художественная_галерея.png" alt="">
+                <a class="logo ">
+                    <img class="logo__img" src="img/logo.png" alt="">
                 </a>
                 <nav>
                     <ul class="header__list nav">
@@ -55,7 +54,7 @@
         <div class="header__bottom">
             <div class="container header__container">
                 <nav class="banner-menu">
-                    <ul class="banner__menu menu">
+                    <ul class="header__menu menu">
                         <li class="menu__item"> <a tabindex="9" href="" class="menu__link">Реализм</a>
                             <ul class="painters banner--realizm" data-simplebar data-simplebar-auto-hide="false">
                                 <li class="painters__item ">
@@ -164,8 +163,14 @@
                     </ul>
                     <!-- <button class="banner-menu-site-search "> -->
                     <div class="banner-search ">
-                        <input type="text" class="banner-menu__search " placeholder="Поиск по сайту">
-                        <!-- <hr class="banner-menu-site-search__line"> -->
+                        <button class="banner-search__btn" >
+                            <svg class="banner-search_magnifier"  width="23" height="22" viewBox="0 0 23 22" fill="red" xmlns="http://www.w3.org/2000/svg">
+                                <rect width="6.8678" height="1.71695" transform="matrix(-0.718931 0.695081 0.718931 0.695081 4.9375 15.6534)" fill="white"/>
+                                <path fill-rule="evenodd" clip-rule="evenodd" d="M12.0969 18C7.53041 18 3.99692 14.3229 3.99692 10C3.99692 5.67715 7.53041 2 12.0969 2C16.6634 2 20.1969 5.67715 20.1969 10C20.1969 14.3229 16.6634 18 12.0969 18ZM12.0969 20C6.57408 20 2.09692 15.5228 2.09692 10C2.09692 4.47715 6.57408 0 12.0969 0C17.6198 0 22.0969 4.47715 22.0969 10C22.0969 15.5228 17.6198 20 12.0969 20Z" fill="white"/>
+                            </svg>
+                        </button>
+                         <input type="text" class="banner-menu__search " placeholder="Поиск по сайту">
+                        
                     </div>
 
                     <!-- </button> -->
