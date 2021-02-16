@@ -12,6 +12,15 @@ $(function () {
 });
 
 window.addEventListener('DOMContentLoaded', function () {
+    //Вывод выпадающего меню в headere
+    document.querySelectorAll('.menu__item').forEach(function(e){
+      e.addEventListener('click',function(event){
+        // alert(event.target)
+        console.log(event)
+        document.querySelector('.painters').classList.toggle('is-show')
+
+      })
+    })
 
     //клик на кнопку все события
     document.querySelector('.events__btn').addEventListener('click',function(event){

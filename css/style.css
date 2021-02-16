@@ -255,27 +255,37 @@ gitimg {
     margin: 0;
 	list-style: none;
 }
-.banner-menu-site-search:hover {
+/* .banner-menu-site-search:hover {
     color: var(--color-hover) ;
-    background-color: inherit;
-}
-.banner-search {
+} */
+/* .banner-search {
     color: var(--color-text);
-  }
-.banner-search:hover {
-     /* color: var(--color-hover); */
+  } */
+/* .banner-search:hover {
     border-color: var(--color-hover);
     cursor: pointer;
+} */
+/* .banner-search__btn:hover {
+     color: var(--color-hover); 
+} */
+.banner-search:hover > input {
+    border-bottom: 1px solid var(--color-hover);
 }
+/* .banner-search:hover > svg {
+    fill: var(--color-hover);
+} */
+.banner-search:hover .banner-search_magnifier {
+    fill: var(--color-hover);
+}
+
 .banner-search__btn {
-    /* padding-top: 14px; */
+    cursor: pointer;
     transform: translateY(10px);
     background: transparent;
     border: none;
-    /* background: url(../img/Group\ 64.png) center left transparent no-repeat; */
 }
-.banner-search_magnifier {
-    /* background-color: inherit; */
+.banner-search_magnifier:hover {
+    /* fill: var(--color-hover); */
 }
 .banner-menu__search {
     width: 250px;
@@ -323,9 +333,7 @@ gitimg {
 .menu__item:not(:last-child) {
     margin-right: 97px;
 }
-.menu__item:last-child {
-    /* margin-right: 317px; */
-}
+
 
 .menu__link {
     background-image: url(../img/Rectangle\ 54.png) ;
@@ -337,6 +345,7 @@ gitimg {
     font-weight: 400;
     line-height: 25px;
     color:  var(--color-text);
+    border: none;
 }
 .menu__link:hover {
   color: var(--color-hover);
@@ -346,12 +355,10 @@ gitimg {
   /* outline: var(--link-focus); */
     /* outline: 2px solid #7943A4; */
   }
-.menu__item:focus {
-    /* color: var(--color-text); */
-}
-.menu__item:hover > ul {  
+
+/* .menu__item:hover > ul {  
      display: inline-block;
-}
+} */
 .painters__link {
     display: block;
     padding: 9px 0 12px 14px;
@@ -386,14 +393,19 @@ gitimg {
     border-color: inherit;
 }
 
+
 .painters {
-       display: none;
+    /* display: none; */
+    transform: translateX(-1900px);
     position: absolute;
     top: 43px;
     padding: 40px;
     width: 300px;
     height: 300px;
     background: rgba(0, 0, 0, 0.4);
+}
+.is-show {
+    transform: none;
 }
 .painters__item:not(:last-child) {
     margin-bottom: 30px;
