@@ -13,12 +13,18 @@ $(function () {
 
 window.addEventListener('DOMContentLoaded', function () {
     //Вывод выпадающего меню в headere
-    document.querySelectorAll('.menu__item').forEach(function(e){
+    document.querySelectorAll('.menu__btn').forEach(function(e){
       e.addEventListener('click',function(event){
-        // alert(event.target)
-        console.log(event)
-        document.querySelector('.painters').classList.toggle('is-show')
-
+        const path = event.currentTarget.dataset.path 
+        if( document.querySelector(`[data-target="${path}"]`).classList.contains('is-show')) {
+          document.querySelector(`[data-target="${path}"]`).classList.toggle('is-show')
+        }
+       else {
+          document.querySelectorAll('.is-show').forEach(function(el){
+          el.classList.remove('is-show')
+        })
+        document.querySelector(`[data-target="${path}"]`).classList.toggle('is-show')
+       } 
       })
     })
 

@@ -55,8 +55,8 @@
             <div class="container header__container">
                 <nav class="banner-menu">
                     <ul class="header__menu menu">
-                        <li class="menu__item"> <button class="menu__link">Реализм</button>
-                            <ul class="painters banner--realizm" data-simplebar data-simplebar-auto-hide="false">
+                        <li class="menu__item"> <button class="menu__btn" data-path = "one">Реализм</button>
+                            <ul class="painters banner--realizm" data-target="one" data-simplebar data-simplebar-auto-hide="false">
                                 <li class="painters__item ">
                                     <a class="painters__link " href=""
                                         style="background-image: url(img/Тинторетто.png)">Тинторетто</a>
@@ -75,8 +75,8 @@
                                 </li>
                             </ul>
                         </li>
-                        <li class="menu__item"> <button class=" menu__link" href="">Импрессионизм </button>
-                            <ul id="element1" class="painters banner--impressionizm" data-simplebar
+                        <li class="menu__item"> <button class=" menu__btn" href="" data-path = "two" >Импрессионизм </button>
+                            <ul id="element1" class="painters banner--impressionizm" data-simplebar data-target="two"
                                 data-simplebar-auto-hide="false">
                                 <li class="painters__item ">
                                     <a class="painters__link " href=""
@@ -96,8 +96,8 @@
                                 </li>
                             </ul>
                         </li>
-                        <li class="menu__item"> <button class=" menu__link" href="">Постимпрессионизм </button>
-                            <ul id="element2" class="painters banner-postimpresionizm" data-simplebar
+                        <li class="menu__item"> <button class=" menu__btn" href="" data-path = "three">Постимпрессионизм </button>
+                            <ul id="element2" class="painters banner-postimpresionizm" data-simplebar data-target="three"
                                 data-simplebar-auto-hide="false">
                                 <li class="painters__item ">
                                     <a class="painters__link " href=""
@@ -117,8 +117,8 @@
                                 </li>
                             </ul>
                         </li>
-                        <li class="menu__item"> <button class=" menu__link" href="">Авангард </button>
-                            <ul id="element3" class="painters banner-avangard" data-simplebar
+                        <li class="menu__item"> <button class=" menu__btn" href="" data-path = "four">Авангард </button>
+                            <ul id="element3" class="painters banner-avangard" data-simplebar data-target="four"
                                 data-simplebar-auto-hide="false">
                                 <li class="painters__item ">
                                     <a class="painters__link " href=""
@@ -139,8 +139,8 @@
                             </ul>
 
                         </li>
-                        <li class="menu__item"> <button class=" menu__link" href="">Футуризм </button>
-                            <ul id="element4" class="painters banner-futurizm" data-simplebar
+                        <li class="menu__item"> <button class=" menu__btn" href="" data-path = "five">Футуризм </button>
+                            <ul id="element4" class="painters banner-futurizm" data-simplebar data-target="five"
                                 data-simplebar-auto-hide="false">
                                 <li class="painters__item ">
                                     <a class="painters__link " href=""
@@ -191,7 +191,8 @@
             </div>
         </section>
         <section class="section-about-us">
-            <h2 class="section-about-us-heading" id="about_us">О нас</h2>
+            <div class="container about-us-container">
+                 <h2 class="section-about-us-heading" id="about_us">О нас</h2>
             <p class="section-about-us-description">Ясность нашей позиции очевидна: семантический разбор внешних
                 противодействий однозначно определяет каждого участника как способного принимать собственные решения
                 касаемо распределения внутренних резервов и ресурсов. Не следует, однако, забывать, что
@@ -201,9 +202,11 @@
                 распределения внутренних резервов и ресурсов. В рамках спецификации современных стандартов, действия
                 представителей оппозиции набирают популярность среди определенных слоев населения, а значит, должны быть
                 разоблачены.</p>
+            </div>
+           
         </section>
         <section class="gallery">
-            <div class="gallery__container">
+            <div class="container gallery__container">
                 <div class="gallery-left">
                     <h2 id="gallery" class="gallery-left__heading">Галерея</h2>
                     <h3 class="gallery-left__filter">Фильтровать по:</h3>
@@ -222,9 +225,9 @@
                 </div>
                 <div class="gallery-right">
                     <div class="swiper-button">
-                        <a tabindex="18" class="swiper-button-prev-custom swiper--prev"></a>
+                        <a tabindex="18" class="swiper-button-prev-custom swiper-prev"></a>
                         <div class="swiper-pagination-custom"></div>
-                        <a tabindex="19" class="swiper-button-next-custom swiper--next"></a>
+                        <a tabindex="19" class="swiper-button-next-custom swiper-next"></a>
                     </div>
                     <div class="swiper-container swiper1">
                         <div class="swiper-wrapper">
@@ -250,7 +253,7 @@
             </div>
         </section>
         <section class="section-catalog">
-            <div class="container catalog-container ">
+            <div class="container  ">
                 <div class="catalog-flag-country flag">
                     <h2 id="catalog" class="flag__heading">Каталог</h2>
                     <a class="flag__link" href="">
@@ -615,7 +618,6 @@
                 </ul>
                 <button class="events__btn btn1">Все события</button>
             </div>
-
         </section>
         <section class="publ">
             <div class="container publ-container">
@@ -685,9 +687,9 @@
                 <div class="publ-right">
                     <div class="publ__slider slider">
                         <div class="swiper2-button">
-                            <div class="swiper2-button-prev-custom swiper--prev"></div>
+                            <div class="swiper2-button-prev-custom swiper-prev"></div>
                             <div class="swiper2-pagination-custom"></div>
-                            <div class="swiper2-button-next-custom swiper--next"></div>
+                            <div class="swiper2-button-next-custom swiper-next"></div>
                         </div>
                         <div class="swiper-container swiper2">
                             <div class="swiper-wrapper">
@@ -793,7 +795,7 @@
                 </p>
                 <h3 class="projects__heading1 ">Партнёры проектов:</h3>
                 <div class="projects-slaider">
-                    <div class="swiper3-button-prev-custom swiper--prev"></div>
+                    <div class="swiper3-button-prev-custom swiper-prev "></div>
                     <div class="swiper-container swiper3">
                         <div class="swiper-wrapper">
                             <div class="swiper-slide swiper-3 "> <img class="swiper3-slide" src="img/proj-sl001.png"
@@ -825,7 +827,7 @@
                             </div>
                         </div>
                     </div>
-                    <div class="swiper3-button-next-custom swiper--next"></div>
+                    <div class="swiper3-button-next-custom swiper-next"></div>
                 </div>
             </div>
         </section>

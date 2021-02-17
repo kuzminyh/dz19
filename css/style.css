@@ -255,19 +255,6 @@ gitimg {
     margin: 0;
 	list-style: none;
 }
-/* .banner-menu-site-search:hover {
-    color: var(--color-hover) ;
-} */
-/* .banner-search {
-    color: var(--color-text);
-  } */
-/* .banner-search:hover {
-    border-color: var(--color-hover);
-    cursor: pointer;
-} */
-/* .banner-search__btn:hover {
-     color: var(--color-hover); 
-} */
 .banner-search:hover > input {
     border-bottom: 1px solid var(--color-hover);
 }
@@ -335,8 +322,9 @@ gitimg {
 }
 
 
-.menu__link {
+.menu__btn {
     background-image: url(../img/Rectangle\ 54.png) ;
+    background-color: inherit;
     background-repeat: no-repeat;
     background-position: right;
     padding-right: 13px;
@@ -347,10 +335,10 @@ gitimg {
     color:  var(--color-text);
     border: none;
 }
-.menu__link:hover {
+.menu__btn:hover {
   color: var(--color-hover);
 }
-.menu__link:focus {
+.menu__btn:focus {
     color: var(--color-text);
   /* outline: var(--link-focus); */
     /* outline: 2px solid #7943A4; */
@@ -375,7 +363,7 @@ gitimg {
     outline: 2px solid #7943A4;
 }
 .banner--realizm {
-    left: 0;
+    left: -110px;
 }
 .banner--impressionizm {
     left: 185px; 
@@ -396,8 +384,9 @@ gitimg {
 
 .painters {
     /* display: none; */
-    transform: translateX(-1900px);
     position: absolute;
+    left: 50%;
+    transform: translateX(-1900px);
     top: 43px;
     padding: 40px;
     width: 300px;
@@ -469,7 +458,7 @@ gitimg {
 
  /* section-about-us*/
  .section-about-us-heading {
-     margin-left: 157px;
+     /* margin-left: 157px; */
      margin-top: 80px;
      margin-bottom: 19px;
     font-size: 48px;
@@ -480,7 +469,7 @@ gitimg {
  }
  .section-about-us-description {
     max-width: 1080px;
-    margin-left: 159px;
+    /* margin-left: 159px; */
     margin-bottom: 78px;
     height: 214px;
     font-size: 16px;
@@ -493,10 +482,14 @@ gitimg {
  }
  
  /*section-gallery*/
+ .gallery {
+      background-image: url(../img/birmingham-museums-trust-MK_98NuC4-4-unsplash\ 3.jpg);
+      background-size: cover;
+ }
  .gallery__container {
     display: flex;
     position: relative;
-    background-image: url(../img/birmingham-museums-trust-MK_98NuC4-4-unsplash\ 3.jpg);
+    /* background-image: url(../img/birmingham-museums-trust-MK_98NuC4-4-unsplash\ 3.jpg); */
     max-width: 1920px;
     height: 995px;
     padding: 80px 159px;
@@ -663,22 +656,22 @@ gitimg {
     background-image: url(../img/Group\ 23.svg);
     background-repeat: no-repeat;
 }
-.swiper--next:focus {
+.swiper-next:focus {
      outline: none;
 }
-.swiper--next:hover {
+.swiper-next:hover {
     background-image: url(../img/next-in-slaider-hover.svg);
 }
-.swiper--next:active {
+.swiper-next:active {
     background-image: url(../img/next-in-slaider-clicked.svg);
 }
-.swiper--prev:focus {
+.swiper-prev:focus {
     outline: none;
 }
-.swiper--prev:hover {
+.swiper-prev:hover {
    background-image: url(../img/prev-in-slaider-hover.svg);
 }
-.swiper--prev:active {
+.swiper-prev:active {
    background-image: url(../img/prev-in-slaider-clicked.svg);
 }
 .swiper-pagination-custom {
@@ -751,7 +744,7 @@ gitimg {
 }
 /* section-catalog */
   .catalog-container {
-    padding: 0 159px; 
+    /* padding: 0 159px;  */
     /* padding-right: 160px; */
   }
   .catalog-flag-country {
@@ -995,8 +988,8 @@ gitimg {
 }
 /*section events*/
 .events-container {
-    padding-right: 150px;
-    padding-left: 161px; 
+    /* padding-right: 150px; */
+    /* padding-left: 161px;  */
 }
 .events_heading {
     margin-top: 75px;
@@ -1125,11 +1118,15 @@ gitimg {
 }
 
 /*секция publ*/
+.publ {
+    background-image: url(../img/publication-background.jpg);
+    background-size: cover;
+    background-repeat: no-repeat;
+}
 .publ-container {
    display: flex;
-   background-image: url(../img/publication-background.jpg);
    height: 763px;
-   padding-left: 156px;
+   /* padding-left: 156px; */
    padding-top: 80px;
    color: var(--color-text);
 }
@@ -1331,9 +1328,8 @@ gitimg {
 
 
 .projects-container {
-    padding-left: 159px;
     padding-top: 80px;
-    padding-right: 160px;
+    /* padding-right: 160px; */
 }
 .projects__heading {
     font-size: 48px;
@@ -1396,6 +1392,7 @@ gitimg {
 
 .swiper3 {
     width: 1453px;
+    margin-right: 45px;
 }
 .swiper3-slide {
     display: block;
@@ -1419,6 +1416,7 @@ gitimg {
 .swiper3-button-prev-custom {
     height: 30px;
     width:30px;
+    margin-right: 43px;
     background-image: url(../img/sw3-left.png);
     background-repeat: no-repeat;
     border: none;
