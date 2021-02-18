@@ -59,11 +59,11 @@ window.addEventListener('DOMContentLoaded', function () {
 
     // анимация на все ссылки
     document.querySelectorAll('a').forEach(function (e) {
-        e.classList.add('anim-a')
-        e.classList.add('anim-a-click')
+        e.classList.add('anim')
+        e.classList.add('anim-click')
     })
 
-    document.querySelectorAll('.anim-a').forEach(function (e) {
+    document.querySelectorAll('.anim').forEach(function (e) {
         e.addEventListener('click', function (el) {
             el.target.classList.add('clicked')
             setTimeout(function () {

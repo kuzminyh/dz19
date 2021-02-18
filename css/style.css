@@ -40,6 +40,9 @@
     font-weight: 400;
     font-style: italic;
  }
+ html {
+    scroll-behavior: smooth;
+ }
 
 :root {
      --color-text:  #FFFFFF;
@@ -185,12 +188,12 @@ gitimg {
     background: rgba(0, 0, 0, 0.4);
 }
 /*main banner*/
-.anim-a {
+.anim {
     position: relative; 
     overflow: hidden;
    /* z-index: 1; */
 }
-.anim-a::after {
+.anim::after {
    content: '';
    position: absolute;
    left: 0;
@@ -204,7 +207,7 @@ gitimg {
     /* z-index: 1;  */
     
 }
-.anim-a-click::after{
+.anim-click::after{
    /* position: relative; */
    /* background: lightgreen; */
    background: rgba(255, 255, 255, 0.33);
@@ -212,7 +215,7 @@ gitimg {
 
     /* z-index: 2;  */
 }
-.anim-a-click.clicked::after {
+.anim-click.clicked::after {
    animation: anim 0.5s forwards;
 }
 @keyframes anim {
@@ -232,7 +235,13 @@ gitimg {
     background-image: url(../img/birmingham-museums-trust-MK_98NuC4-4-unsplash\ 2.jpg);
     background-size: cover;
 }
-
+ .simplebar-scrollbar::before {
+     background-color: black;
+     width: 2px;
+} 
+.simplebar-content-wrapper {
+    background-color: rgba(0, 0, 0, 0.4);
+}
 
 .banner-menu {
     display: flex;
@@ -338,15 +347,17 @@ gitimg {
 .menu__btn:hover {
   color: var(--color-hover);
 }
+.menu__btn:active {
+   /* outline: none; */
+}
 .menu__btn:focus {
-    color: var(--color-text);
+    color: var(--color-hover);
+    outline: none;
   /* outline: var(--link-focus); */
     /* outline: 2px solid #7943A4; */
   }
 
-/* .menu__item:hover > ul {  
-     display: inline-block;
-} */
+
 .painters__link {
     display: block;
     padding: 9px 0 12px 14px;
@@ -362,7 +373,7 @@ gitimg {
 .painters__link:hover {
     outline: 2px solid #7943A4;
 }
-.banner--realizm {
+/* .banner--realizm {
     left: -110px;
 }
 .banner--impressionizm {
@@ -376,17 +387,19 @@ gitimg {
 }
 .banner-futurizm {
     left: 940px;
-}
+} */
 .banner-menu-site-search__line {
     border-color: inherit;
 }
-
+.menu__down {
+    position: relative;
+}
 
 .painters {
     /* display: none; */
     position: absolute;
-    left: 50%;
-    transform: translateX(-1900px);
+    left: 0;
+    transform: translate(-1900px);
     top: 43px;
     padding: 40px;
     width: 300px;
@@ -1410,7 +1423,8 @@ gitimg {
     display: flex;
     width: 449px;
     height: 149px;
-    border: 1px solid #885BC7;
+    border: 1px solid #CACACA;
+  
     
 }
 .swiper3-button-prev-custom {
@@ -1438,7 +1452,7 @@ gitimg {
     /* padding-left: 160px; */
 }
 .contacts__heading {
-    padding-left: 160px;
+    /* padding-left: 160px; */
     font-size: 48px;
     font-style: normal;
     font-weight: 400;
@@ -1449,11 +1463,12 @@ gitimg {
     display: flex;
 }
 .contacts__left {
-    width: 700px;
+     width: 700px; 
+    padding-right: 122px;
     height: 700px;
     padding-top: 124px;
-    padding-left: 160px;
-    border: 1px solid #CACACA;
+    /* padding-left: 160px; */
+    border-top: 1px solid #CACACA;
 }
 .contacts__showroom {
     font-size: 24px;
@@ -1537,14 +1552,17 @@ gitimg {
 }
 
 /* footer */
+.footer {
+    background-color: black;
+    height: 140px;
+}
 .footer__container {
     display: flex; 
     justify-content: space-between ;
-    background-color: black;
-    height: 140px;
     align-items: center;
-    padding-left: 160px;
-    padding-right: 160px;
+    padding-top: 47px;
+    /* padding-left: 160px;
+    padding-right: 160px; */
     /* width: 1920px; */
 }
 /* display: flex;
