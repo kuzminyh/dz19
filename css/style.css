@@ -330,6 +330,9 @@ gitimg {
     margin-right: 97px;
 }
 
+.menu__btn--clicked {
+    background-image: url(../img/up.png) !important ;
+}
 
 .menu__btn {
     background-image: url(../img/Rectangle\ 54.png) ;
@@ -409,6 +412,8 @@ gitimg {
 .is-show {
     transform: none;
 }
+
+
 .painters__item:not(:last-child) {
     margin-bottom: 30px;
  }
@@ -785,6 +790,7 @@ gitimg {
       width: 66px;
       height: 66px; 
       border: none;
+      background-color: inherit;
      /* border: 2px solid #9D5CD0;
       border-radius: 50%; */
       /* transform: translateY(15px);  */
@@ -815,9 +821,12 @@ gitimg {
     outline: none;
   }
   .catalog-description {
+    display: none;
     margin-top: 15px;
     margin-bottom: 39px;
     width: 1080px;
+    height: 117px;
+    overflow: hidden;
     font-size: 16px;
     font-style: normal;
     font-weight: 400;
@@ -825,6 +834,9 @@ gitimg {
     letter-spacing: 0em;
     color: var(--color-text-dark);
   }
+  .is-visual {
+    display: block;
+}
   .catalog-left {
       margin-right: 50px;
   }
