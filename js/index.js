@@ -56,7 +56,7 @@ var mySwiper1 = new Swiper('.swiper1', {
 var mySwiper3 = new Swiper('.swiper3', {
    // Optional parameters
    slidesPerView: 3,
-   spaceBetween: 49,
+   spaceBetween: 50,
    // direction: 'horizontal',
    // loop: true,
 
