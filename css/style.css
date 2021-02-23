@@ -97,7 +97,12 @@ img {
     cursor: pointer; 
     transition: color,background-color .5s ease-in-out;
   }
-
+  .container {
+    width: 100%;
+	max-width: 1630px;
+	margin: 0 auto;
+	padding: 0 15px;
+}
 /*header*/
 .header {
    position: absolute;
@@ -108,34 +113,33 @@ img {
 .header__top {
     background-color: black; 
     padding: 30px 0;
+    height: 100px;
 }
 
 .header__container {
     display: flex;
     justify-content: space-between ; 
     align-items: center;
+    padding-left: 15px;
+    /* height: 30px; */
     /* min-height: 100px;  */
     /* background-color: #000000; */
     /* padding-left: 160px;
     padding-right: 156px; */
  }
-.container {
-    width: 100%;
-	max-width: 1630px;
-	margin: 0 auto;
-	padding: 0 15px;
-    /* max-width: 1920px;mg
-    /* margin: 0 auto; */
-   
-}
+
 /* .header__logo {
     display: flex; 
     flex-direction: column;
     flex-wrap: wrap;
   
 } */
+.logo {
+   height: 40px; 
+}
 .logo__img {
     display: inline-block;
+    margin-right: 179px;
 }
 .logo__img:not(:last-child) {
     margin-bottom: 7px;
@@ -143,7 +147,7 @@ img {
 .header__list {
     display: flex;
     justify-content: space-between;
-    margin-right: 69px;
+    margin-right: 274px;
 }
 .nav__item {
     font-size: 18px;
@@ -179,8 +183,9 @@ img {
     color: #FFFFFF;
 }
 .header__bottom {
-    padding: 21px 0;
+    padding: 22px 0 18px;
     background: rgba(0, 0, 0, 0.4);
+    /* height: 70px; */
 }
 /*main banner*/
 .anim {
@@ -226,6 +231,7 @@ img {
 }
 
 .banner {
+    height: 800px;
     padding-top: 170px;
     background-image: url(../img/birmingham-museums-trust-MK_98NuC4-4-unsplash\ 2.jpg);
     background-size: cover;
@@ -242,6 +248,7 @@ img {
     display: flex;
     justify-content: space-between;
     width: 100%;
+    margin-left: -8px;
     /* max-width: 1920px; */
     padding: 0 0px;
 }
@@ -252,6 +259,7 @@ img {
 .banner__container {
     position: relative;
     height: 700px;
+    padding-left: 13px;
 }
 
 .header__menu {
@@ -417,6 +425,7 @@ img {
     max-width: 597px;
     margin-top: 70px;
     margin-bottom: 22px;
+    margin-left: -4px;
     font-size: 72px;
     font-style: bold;
     font-weight: 700;
@@ -818,7 +827,7 @@ img {
   .catalog-description {
     display: none;
     margin-top: 15px;
-    margin-bottom: 39px;
+    margin-bottom: 48px;
     width: 1080px;
     height: 117px;
     overflow: h;
@@ -1031,9 +1040,9 @@ img {
     justify-content: space-between; */
     padding-bottom: 46px;
     height: 700px;
-    width: 499px;
+    width: 500px;
     border: 1px solid #CACACA;
-    margin-bottom: 50px;
+    margin-bottom: 48px;
 }
 .events__info {
     display: flex;
@@ -1077,7 +1086,7 @@ img {
 .events__where {
     max-height: 41px;
     margin-top: 10px;
-    margin-bottom: 0;
+    margin-bottom: 6px;
     text-align: right;
     margin-right: 19px;
     font-size: 12px;
@@ -1088,13 +1097,14 @@ img {
 }
 .events__what {
     margin-top: -1px;
-    margin-bottom: 10px;
-    font-size: 25px;
+    margin-bottom: 1px;
+    font-size: 24px;
     font-style: normal;
     font-weight: 600;
     line-height: 33px; 
     letter-spacing: 0px;
     color: var(--color-text-dark);
+
 }
 
 
@@ -1112,7 +1122,7 @@ img {
     display: inline-block;
     color: var(--color-hover);
     border-bottom: 1px solid var(--color-link);
-    padding-bottom: 5px;
+    padding-bottom: 3px;
 }
 .events__empty-block {
      flex-grow: 1;
@@ -1146,37 +1156,37 @@ img {
 .publ-container {
    display: flex;
    height: 763px;
+   padding-left: 13px;
    /* padding-left: 156px; */
-   padding-top: 80px;
+   padding-top: 84px;
    color: var(--color-text);
 }
-/* .publ__book {
-    position: relative;
-    padding-left: 30px;
-    cursor: pointer;
 
-} */
 .publ-right {
     margin-left: 173px;
 }
 .publ__heading {
     margin-top: 0;
-    margin-bottom: 30px;
+    margin-bottom: 22px;
     font-size: 48px;
     font-style: normal;
     font-weight: 400;
     /* line-height: 65px; */
 }
-.publ__category {
+.publ__checklist {
+    margin-bottom: 40px;
+}
+.publ__category:not(:last-child) {
     margin-top: 0;
     font-size: 16px;
     font-style: normal;
     font-weight: 700;
     line-height: 32px;
-    margin-bottom: 19px;
-
+    margin-bottom: 6px;
 }
-
+.publ__category:last-child{
+    margin-bottom: 85px;
+}
 .checkbox {
     position: relative;
   }
@@ -1187,10 +1197,19 @@ img {
   .checkbox__text {
     display: flex;
     align-items: center;
-    font-weight: 300;
-    font-size: 12px;
-    line-height: 14px;
+    font-weight: 400;
+    font-size: 16px;
+    /* line-height: 32px; */
     color: var(--color-text);
+
+    /* font-family: Open Sans;
+font-size: 16px;
+font-style: normal;
+font-weight: 400;
+line-height: 32px;
+letter-spacing: 0em;
+text-align: left; */
+
   }
 
   .checkbox__text::before {
@@ -1233,21 +1252,30 @@ img {
   }
   .publ__checkbox {
       display: block;
-      margin-bottom: 20px;
+      margin-bottom: 14px;
   }
   .publ__price {
       margin-left: 0;
-      margin-top: 32px;
-      margin-bottom: 10px;
+      /* margin-top: 32px; */
+      /* margin-bottom: 10px; */
+      font-size: 16px;
+      font-style: normal;
+      font-weight: 700;
+      /* line-height: 30px; */
+      letter-spacing: 0em;
+      text-align: left;
+
   }
   .publ__inputs {
       width: 277px;
       height: 40px;
       border: 1px solid rgba(255, 255, 255, 0.5);
       border-radius: 6px;
+      /* margin-left: 10px; */
   }
   .publ__input {
       width: 73px;
+      margin-left: 10px;
       height: 39px;
       font-size: 16px;
       font-style: normal;
@@ -1256,7 +1284,7 @@ img {
       color: var(--color-text);
       background: rgba(157, 92, 208, 0.5);
       border: none;
-      padding: 0;
+      padding: 0 0 0 8px;
 
  }
  .publ__slider {
@@ -1272,9 +1300,13 @@ img {
    height: 512px;
    
  }
-.swiper2-../img {
+.swiper2 {
+    margin-bottom: 7px;
+} 
+.swiper2-img {
     width: 350px;
     height: 390px;
+    margin-bottom: 8px;
      
 }
 .swiper2-button-prev-custom {
@@ -1285,6 +1317,8 @@ img {
 }
 .swiper2-button {
    display: flex;
+   width: 130px;
+   justify-content: space-between;
    margin-bottom: 30px;
 }
 .swiper2-button-next-custom {
@@ -1307,18 +1341,20 @@ img {
     border: 2px solid #9D5CD0;
     border-radius: 100px;
     background-color: transparent;
-    padding: 8px 14px ;
+    padding: 8px 19px ;
     font-size: 16px;
     font-style: normal;
     font-weight: 700;
     line-height: 22px;
     color: var(--color-text);
     cursor: pointer;
+
 }
 .book__author {
     display: flex;
     justify-content: space-between;
-    margin-top: 23px;
+    margin-bottom: 10px;
+    /* margin-top: 23px; */
 }
 .book__name {
     font-size: 16px;
@@ -1356,12 +1392,12 @@ img {
     font-style: normal;
     font-weight: 400;
     line-height: 65px;
-    margin-bottom: 30px;
+    margin-bottom: 16px;
     margin-top: 0;
     color: var(--color-text-dark);
 }
 .projects__heading1 {
-    margin-left: 0;
+    margin: 0;
     font-size: 24px;
     font-style: normal;
     font-weight: 600;
@@ -1371,6 +1407,8 @@ img {
 .projects__descr {
     height: 246px;
     width: 1080px;
+    margin-top: 0;
+    margin-bottom: 30px;
     font-size: 16px;
     font-style: normal;
     font-weight: 400;
@@ -1407,7 +1445,7 @@ img {
 .projects-slaider {
     display: flex;
     align-items: center;
-    /* margin-bottom: 80px; */
+     margin-bottom: 84px; 
 }
 
 .swiper3 {
@@ -1459,11 +1497,10 @@ img {
     /* padding-left: 160px; */
 }
 .contacts__heading {
-    /* padding-left: 160px; */
+    margin-bottom: 21px; 
     font-size: 48px;
     font-style: normal;
     font-weight: 400;
-    line-height: 65px;
     color: var(--color-text-dark);
 }
 .contacts__flex {
@@ -1473,7 +1510,7 @@ img {
      width: 700px; 
     padding-right: 122px;
     height: 700px;
-    padding-top: 124px;
+    padding-top: 108px;
     /* padding-left: 160px; */
     border-top: 1px solid #CACACA;
 }
@@ -1484,12 +1521,22 @@ img {
     color: var(--color-text-dark);
 }
 .contacts__adr {
-    padding-bottom: 36px;
+    padding-bottom: 5px;
+    margin-bottom: 0;
     font-size: 16px;
     font-style: normal;
     font-weight: 400;
     line-height: 32px;
     color: var(--color-text-dark);
+}
+.back-call {
+    margin-bottom: 20px;
+    font-size: 24px;
+    font-style: normal;
+    font-weight: 400;
+    letter-spacing: 0em;
+    text-align: left;
+
 }
 .btn1:hover {
     color: var(--color-text);
@@ -1511,7 +1558,7 @@ img {
 }
 
 .form__input:not(:first-child) {
-    margin-top: 23px;
+    /* margin-top: 23px; */
  }
 .form__input.js-validate-error-field:focus{
     outline: none;
