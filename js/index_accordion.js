@@ -6,7 +6,7 @@ $(function () {
     classes: {
       "ui-accordion": "highlight"
     },
-    active: false,
+    active: 0,
     heightStyle: "content",
   });
 });
@@ -60,8 +60,8 @@ window.addEventListener('DOMContentLoaded', function () {
     event.target.classList.toggle('no-visibility')
     console.log(event.target.classList)
   })
-
-  document.querySelectorAll('.accord-close').forEach(function (e) {
+  //Клик на периоды в каталоге
+   document.querySelectorAll('.accord-close, .accord-open').forEach(function (e) {
     e.addEventListener('click', function (event) {
       if (event.target.classList.contains('accord-open')) {
         event.target.classList.remove('accord-open')
