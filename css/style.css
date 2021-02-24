@@ -1547,6 +1547,7 @@ text-align: left; */
    height: 40px;
    border-radius: 100px;
    border: 1px solid #333333 ;
+   margin-bottom: 23px; 
 }
 .form__input::placeholder {
    padding-left: 24px;
@@ -1557,8 +1558,8 @@ text-align: left; */
    color: var(--color-text-dark);
 }
 
-.form__input:not(:first-child) {
-    /* margin-top: 23px; */
+.form__input:last-child {
+     margin-bottom: 22px; 
  }
 .form__input.js-validate-error-field:focus{
     outline: none;
