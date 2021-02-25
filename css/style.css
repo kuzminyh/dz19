@@ -34,6 +34,13 @@
     scroll-behavior: smooth;
  }
 
+ body
+ {
+   width: 100%;
+   max-width: 100%;
+   overflow-x: hidden;
+ }
+
 :root {
      --color-text:  #FFFFFF;
      --color-text-dark: #333333;
@@ -265,7 +272,7 @@ img {
 .header__menu {
     position: relative;
     margin: 0;
-	list-style: none;
+    list-style: none;
 }
 .banner-search:hover > input {
     border-bottom: 1px solid var(--color-hover);
@@ -279,23 +286,28 @@ img {
 
 .banner-search__btn {
     cursor: pointer;
-    transform: translateY(10px);
+    transform: translateY(5px);
+    /* padding-left: 0; */
+    padding-right: 0;
     background: transparent;
     border: none;
 }
 .banner-search_magnifier:hover {
     /* fill: var(--color-hover); */
 }
+/* .banner-search {
+      width: 218px;
+} */
 .banner-menu__search {
-    width: 250px;
+    width: 218px;
     background-color: inherit;
-    /* padding-left: 31px; */
+    padding-top: 0px; 
     border: none;
     border-bottom: 1px solid rgba(255, 255, 255, 0.85) ;
     font-size: 18px;
     font-style: normal;
     font-weight: 400;
-    line-height: 25px;
+    /* line-height: 25px; */
     letter-spacing: 0em;
     color:  var(--color-text);
     text-align: left;
@@ -338,6 +350,7 @@ img {
 }
 
 .menu__btn {
+    margin-right: -7px; 
     background-image: url(../img/Rectangle\ 54.png) ;
     background-color: inherit;
     background-repeat: no-repeat;
@@ -349,6 +362,7 @@ img {
     line-height: 25px;
     color:  var(--color-text);
     border: none;
+    font-family: Open Sans;
 }
 .menu__btn:hover {
   color: var(--color-hover);
