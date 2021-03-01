@@ -202,7 +202,7 @@ img {
 .header__login {
     background-image: url(../img/Vector.svg);
     background-repeat: no-repeat;
-    background-size: 13px 13px contain;
+    background-size: 13px 13px ;
     background-position: 0 center;
     padding-left: 20px;
     font-size: 18px;
@@ -345,14 +345,7 @@ img {
     cursor: pointer;
     /* transition: color .3s ease-in-out */
 }
-.banner-menu-site-search__line {
-    transform: translateY(-2px);
-    margin-left: 30px;
-    margin-top: 0px;
-    color: inherit;
-    width: 218px;
-    size: 1px;
-}
+
 .banner-menu__bar {
     display: none; 
     position: absolute;
@@ -838,7 +831,7 @@ img {
     margin-bottom: 48px;
     width: 1080px;
     height: 117px;
-    overflow: h;
+    overflow: hidden;
     font-size: 16px;
     font-style: normal;
     font-weight: 400;
@@ -1620,8 +1613,9 @@ text-align: left; */
   width: 1238px;
   height: 700px;
 }
-[class*="ground-pane" ] {  /*/ищем все элементы класса с именем ground-pane*/
-    filter: grayscale();
+/*ищем все элементы класса с именем ground-pane*/
+[class*="ground-pane" ] {  
+  filter: grayscale();
 }
 
 /* footer */
