@@ -94,16 +94,6 @@ tippy('.projects__tooltip3', {
    theme: 'tomato',
 });
  
-//  tippy('.projects__tooltip1', {
-//    theme: 'tomato',
-//  });
- 
-// font-family: Open Sans;
-// font-size: 12px;
-// font-style: normal;
-// font-weight: 600;
-// line-height: 16px;
-// letter-spacing: 0em;
-// text-align: center;
+
 
  

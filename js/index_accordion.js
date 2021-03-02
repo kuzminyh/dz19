@@ -3,9 +3,6 @@ $(function () {
   $("#accordion").accordion({
     icons: false,
     collapsible: true,
-    classes: {
-      "ui-accordion": "highlight"
-    },
     active: 0,
     heightStyle: "content",
   });
