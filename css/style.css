@@ -162,7 +162,7 @@ img {
 }
 .header__top {
     background-color: black; 
-    padding: 30px 0;
+    padding: 28px 0 29px;
     /* height: 100px; */
 }
 
@@ -170,12 +170,16 @@ img {
     display: flex;
     justify-content: space-between ; 
     align-items: center;
-    padding-left: 15px;
+    padding-left: 22px;
+    padding-right: 7px;
+ }
+ .header__container--bottom {
+    padding-right: 1px;
  }
 
 .logo {
    /* height: 40px; */
-    margin-right: 169px; 
+    margin-right: 178px; 
 }
 .logo__img {
     display: inline-block;
@@ -198,7 +202,7 @@ img {
     color: #FFFFFF;
 }
 .nav__item:not(:last-child) {
-    margin-right: 61px; 
+    margin-right: 62px; 
 }
 
 .header__login:hover {
@@ -223,7 +227,7 @@ img {
     transition: background-image .3s ease-in-out, color .3s ease-in-out;
 }
 .header__bottom {
-    padding: 20px 0 18px;
+    padding: 21px 0 18px;
     background: rgba(0, 0, 0, 0.4);
 }
 /*main banner*/
@@ -295,6 +299,13 @@ img {
 .nav__link:focus {
     outline: var(--link-focus);
     color: inherit;
+    font-size: 18px;
+    font-style: normal;
+    font-weight: 600;
+    line-height: 25px;
+    letter-spacing: 0em;
+
+
 }
 .banner__container {
     position: relative;
@@ -1696,7 +1707,7 @@ background-color: #000000; */
      margin: auto;
  }
  .header__top {
-     padding: 36px 50px;
+     padding: 36px 50px 37px;
  }
  .header__login {
      display: none;
