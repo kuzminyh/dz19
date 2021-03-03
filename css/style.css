@@ -144,6 +144,16 @@ img {
     padding: 0;
 }
 /*header*/
+.burger {
+    display: none;
+    background-image: url(../img/Burger.png);
+    background-size: contain;
+    width: 36px;
+    height: 28px;
+    background-repeat: no-repeat;
+    background-color: inherit;
+    border: none;
+}
 .header {
    position: absolute;
    width: 100%;
@@ -1674,5 +1684,24 @@ background-color: #000000; */
 }
 .social___link--face {
     background-image: url("../img/facebook.png");
-   
+}
+@media (max-width: 1024px) {
+ .burger {
+    display: block;
+ }
+ .header__list {
+    display: none;
+ }
+ .logo {
+     margin: auto;
+ }
+ .header__top {
+     padding: 36px 50px;
+ }
+ .header__login {
+     display: none;
+ }
+ .header__menu {
+     display: none;
+ }
 }
