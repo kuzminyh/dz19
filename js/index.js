@@ -5,7 +5,7 @@ const choices = new Choices(element, {
     itemSelectText: ''
 });
 
-// swiper
+  // swiper
 var mySwiper1 = new Swiper('.swiper1', {
     slidesPerView: 3,
     slidesPerGroup: 3,
@@ -80,8 +80,6 @@ var mySwiper3 = new Swiper('.swiper3', {
 })
 // Изменение слайдера при изм размера
 window.matchMedia('(max-width: 1024px)').addListener(function(e){
-   // console.log(e)
-   // document.querySelector('mySwiper1').destroy();
    var mySwiper1 = new Swiper('.swiper1', {
       slidesPerView: 2,
       slidesPerGroup: 2,

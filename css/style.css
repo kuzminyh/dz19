@@ -1479,7 +1479,7 @@ text-align: left; */
 }
 
 .swiper3 {
-    width: 1453px;
+    width: 1450px;
     margin-right: 45px;
 }
 .swiper3-slide {
@@ -1496,7 +1496,7 @@ text-align: left; */
 }
 .swiper-3 {
     display: flex;
-    width: 450px !important;
+    /* width: 450px !important; */
     height: 148px;
     border: 1px solid #CACACA;
   
