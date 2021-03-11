@@ -554,12 +554,8 @@ img {
  .gallery__container {
     display: flex;
     position: relative;
-    /* background-image: url(../img/birmingham-museums-trust-MK_98NuC4-4-unsplash\ 3.jpg); */
-    max-width: 1920px;
     height: 995px;
-    padding: 80px 159px;
-    /* margin-bottom: 80px; */
-    /* padding-top: 165px; */
+    padding-top: 80px 
   }
  .gallery-left {
    margin-right: 50px;
@@ -1043,9 +1039,12 @@ img {
 }
 .painter__list {
     display: inline-block;
+   	padding-top: 25px;
+	padding-bottom: 28px;
+	padding-right: 38px;
     columns: 208px 3;
     column-gap: 42px;
-   
+  
 }
 .painter__item {
    
@@ -1191,8 +1190,7 @@ img {
 .publ-container {
    display: flex;
    height: 763px;
-   padding-left: 13px;
-   /* padding-left: 156px; */
+   /* padding-left: 13px; */
    padding-top: 84px;
    color: var(--color-text);
 }
@@ -1236,15 +1234,6 @@ img {
     font-size: 16px;
     /* line-height: 32px; */
     color: var(--color-text);
-
-    /* font-family: Open Sans;
-font-size: 16px;
-font-style: normal;
-font-weight: 400;
-line-height: 32px;
-letter-spacing: 0em;
-text-align: left; */
-
   }
 
   .checkbox__text::before {
@@ -1257,8 +1246,6 @@ text-align: left; */
     border: 1px solid var(--color-text);
     background-position: center;
     background-repeat: no-repeat;
-    /* color: var(--color-link) ; */
-     /* color: black;  */
   } 
 
   .checkbox__text::after {
@@ -1270,8 +1257,6 @@ text-align: left; */
     top: 0;
     bottom: 0;
     opacity: 0;
-    /* color: var(--color-link) ; */
-    /* outline: 1px solid var(--color-link); */
   }
 
 
@@ -1441,7 +1426,7 @@ text-align: left; */
 }
 .projects__descr {
     height: 246px;
-    width: 1080px;
+    max-width: 1080px;
     margin-top: 0;
     margin-bottom: 30px;
     font-size: 16px;
@@ -1480,7 +1465,7 @@ text-align: left; */
 .projects-slaider {
     display: flex;
     align-items: center;
-     margin-bottom: 84px; 
+    margin-bottom: 84px; 
 }
 
 .swiper3 {
