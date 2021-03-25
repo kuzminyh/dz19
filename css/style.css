@@ -77,7 +77,7 @@ input {
    
 }
 button {
-    transition: color .3s ease-in-out , background-image .3s ease-in-out ;
+    transition: color .3s ease-in-out , background-image .3s ease-in-out , background-color .3s ease-in-out ;
     cursor: pointer;
 }
 btn:hover {
@@ -607,7 +607,19 @@ img {
     border: 3px solid #D1A9F0;
 }
 
-.choices__item.choices__item--choice.choices__item--selectable {
+/* .choices[data-type*=select-one]::after {
+    background-image: url(../img/arrow-down.svg);
+}  */
+.choices__list--single::after {
+     content: 'url(../img/arrow-down.svg)';
+     position: absolute;
+     top: 50%;
+     left: 80%;
+      background-image: url(../img/arrow-down.svg); 
+      /* z-index: 5; */
+}
+
+.choices__item .choices__item--choice.choices__item--selectable {
     max-height: 40px;
     padding: 0;
 }
@@ -681,12 +693,14 @@ img {
       display: block;
       height: 30px;
       width: 30px;
-      background-image: url(../img/Group\ 22.svg);
+      border-radius: 50%;
+      background-image: url(../img/arrow-prev.svg);
+      background-position: center;
       background-repeat: no-repeat;
-      background-size: cover;
+      background-size: 25%; 
       border: none;
       outline: none;
-      background-color: inherit;
+      background-color:  #666666;
  }
  .swiper-button-prev-custom:focus {
     outline: none;
@@ -704,30 +718,32 @@ img {
     display: block;
     height: 30px;
     width: 30px;
-    background-image: url(../img/Group\ 23.svg);
+    border-radius: 50%;
+    background-image: url(../img/arrow-next.svg);
+    background-position: center;
     background-repeat: no-repeat;
-    background-size: cover;
+    background-size: 25%; 
     border: none;
     outline: none;
-    background-color: inherit;
+    background-color:  #666666;
 }
 .swiper-next:focus {
      outline: none;
 }
 .swiper-next:hover {
-    background-image: url(../img/next-in-slaider-hover.svg);
+    background-color: var(--color-link);
 }
 .swiper-next:active {
-    background-image: url(../img/next-in-slaider-clicked.svg);
+    border: 2px solid var(--color-active);
 }
 .swiper-prev:focus {
     outline: none;
 }
 .swiper-prev:hover {
-   background-image: url(../img/prev-in-slaider-hover.svg);
+    background-color: var(--color-link);
 }
 .swiper-prev:active {
-   background-image: url(../img/prev-in-slaider-clicked.svg);
+    border: 2px solid var(--color-active);
 }
 .swiper-pagination-custom {
     width: 47px;
@@ -1344,10 +1360,17 @@ text-align: left; */
      
 }
 .swiper2-button-prev-custom {
+    display: block;
     height: 30px;
     width: 30px;
-    background-image: url(../img/Group\ 22.svg);
+    border-radius: 50%;
+    background-image: url(../img/arrow-prev.svg);
+    background-position: center;
     background-repeat: no-repeat;
+    background-size: 25%; 
+    border: none;
+    outline: none;
+    background-color:  #666666;
 }
 .swiper2-button {
    display: flex;
@@ -1356,10 +1379,17 @@ text-align: left; */
    margin-bottom: 30px;
 }
 .swiper2-button-next-custom {
-  height: 30px;
-  width: 30px;
-  background-image: url(../img/Group\ 23.svg);
-  background-repeat: no-repeat;
+    display: block;
+    height: 30px;
+    width: 30px;
+    border-radius: 50%;
+    background-image: url(../img/arrow-next.svg);
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: 25%; 
+    border: none;
+    outline: none;
+    background-color:  #666666;
 }
 .swiper2-pagination-custom {
   width: 47px;
@@ -1507,27 +1537,30 @@ text-align: left; */
     
 }
 .swiper3-button-prev-custom {
+    display: block;
     height: 30px;
-    width:30px;
-    margin-right: 43px;
-    background-image: url(../img/sw3-left.png);
+    width: 30px;
+    border-radius: 50%;
+    background-image: url(../img/arrow-prev.svg);
+    background-position: center;
     background-repeat: no-repeat;
-    background-size: cover;
+    background-size: 25%; 
     border: none;
     outline: none;
-    background-color: inherit;
-    transform: translateY(10px);
+    background-color:  ##ECECEC;
 }
 .swiper3-button-next-custom {
-  height: 30px;
-  width: 30px;
-  background-image: url(../img/sw3-right.png);
-  background-repeat: no-repeat;
-  background-size: cover;
-  border: none;
-  outline: none;
-  background-color: inherit;
-  transform: translateY(10px);
+    display: block;
+    height: 30px;
+    width: 30px;
+    border-radius: 50%;
+    background-image: url(../img/arrow-next.svg);
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: 25%; 
+    border: none;
+    outline: none;
+    background-color:  #ECECEC;
 }
 /*section contacts*/
 
