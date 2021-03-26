@@ -24,29 +24,36 @@ window.addEventListener('DOMContentLoaded', function () {
         })
         document.querySelectorAll('.menu__btn').forEach(function (e) {
           e.classList.remove('menu__btn--clicked')
-          console.log("delet",e)
+          console.log("delet", e)
         })
         document.querySelector(`[data-target="${path}"]`).classList.toggle('is-show')
         event.currentTarget.classList.toggle('menu__btn--clicked')
-         console.log("toggle", event.currentTarget)
+        console.log("toggle", event.currentTarget)
       }
     })
   })
 
   //Клик на флаги
+  // document.querySelector('flag__link').focus()
   document.querySelector('.catalog-description').classList.add('is-visual')
-   document.querySelectorAll('.flag__link').forEach(function(e){
-
-     e.addEventListener('click',function(event) {
-       const flag = event.currentTarget.dataset.flag
-       document.querySelectorAll('.catalog-description').forEach(function(e){
-         e.classList.remove('is-visual')
+  document.querySelectorAll('.flag__link').forEach(function (e) {
+    
+    e.addEventListener('click', function (event) {
+       document.querySelectorAll('.flag-active').forEach(function(e){
+         e.classList.remove('flag-active')
        })
+       event.target.parentElement.classList.add('flag-active')  
+       document.querySelectorAll('.catalog-description').forEach(function (e) {
+       e.classList.remove('is-visual')
+      })
+      const flag = event.currentTarget.dataset.flag
+      document.querySelectorAll('.catalog-description').forEach(function (e) {
+        e.classList.remove('is-visual')
+      })
+      document.querySelector(`[data-descr="${flag}"]`).classList.add('is-visual')
+    })
 
-       document.querySelector(`[data-descr="${flag}"]`).classList.add('is-visual')
-     })
-  
-   })
+  })
 
   //клик на кнопку все события
   document.querySelector('.events__btn').addEventListener('click', function (event) {
@@ -58,7 +65,7 @@ window.addEventListener('DOMContentLoaded', function () {
     console.log(event.target.classList)
   })
   //Клик на периоды в каталоге
-   document.querySelectorAll('.accord-close, .accord-open').forEach(function (e) {
+  document.querySelectorAll('.accord-close, .accord-open').forEach(function (e) {
     e.addEventListener('click', function (event) {
       if (event.target.classList.contains('accord-open')) {
         event.target.classList.remove('accord-open')
