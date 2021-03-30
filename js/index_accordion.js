@@ -4,7 +4,7 @@ $(function () {
     icons: false,
     collapsible: true,
     active: 0,
-    heightStyle: "content",
+    heightStyle: "fill",
   });
 });
 
@@ -51,8 +51,14 @@ window.addEventListener('DOMContentLoaded', function () {
         e.classList.remove('is-visual')
       })
       document.querySelector(`[data-descr="${flag}"]`).classList.add('is-visual')
+      document.querySelector('.catalog-right').classList.add('no-visual')
+      setTimeout(function(){
+        document.querySelector('.catalog-right').classList.remove('no-visual')
+      },1000) 
     })
+    
 
+    // $("#accordion").accordion("refresh")
   })
 
   //клик на кнопку все события
