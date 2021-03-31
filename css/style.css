@@ -916,12 +916,20 @@ img {
     line-height: 32px;
     letter-spacing: 0em;
     color: var(--color-text-dark);
+    opacity: 0;
   }
+  .catalog-left__painter-info {
+    display: none;
+}
   .is-visual {
     display: block;
+    opacity: 1;
+    transition: opacity .3s ease-in-out;
 }
   .catalog-left {
       margin-right: 50px;
+      opacity: 1;
+      transition: opacity .3s ease-in-out;
   }
 
   .catalog-left-img {
@@ -957,6 +965,7 @@ img {
     font-weight: 400;
     line-height: 16px;
   }
+
   .catalog-main {
       display: flex;
       justify-content: space-between;

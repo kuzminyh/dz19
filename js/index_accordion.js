@@ -52,15 +52,35 @@ window.addEventListener('DOMContentLoaded', function () {
       })
       document.querySelector(`[data-descr="${flag}"]`).classList.add('is-visual')
       document.querySelector('.catalog-right').classList.add('no-visual')
+       document.querySelector('.catalog-left').classList.add('no-visual')
       setTimeout(function(){
         document.querySelector('.catalog-right').classList.remove('no-visual')
       },1000) 
+      setTimeout(function(){
+        document.querySelector('.catalog-left').classList.remove('no-visual')
+      },1000) 
     })
-    
-
-    // $("#accordion").accordion("refresh")
   })
 
+  //Клик на художника в акордеоне
+  document.querySelectorAll('.painter__item').forEach(function(e){
+     
+     e.addEventListener('click', function(event){
+       document.querySelectorAll('.painter__link').forEach(function(e){
+         e.classList.remove('activ')
+       })
+      event.target.classList.add('activ')
+      event.preventDefault()
+      const author = event.currentTarget.dataset.author
+      document.querySelectorAll('.catalog-left__painter-info').forEach(function (e) {
+        e.classList.remove('is-visual')
+      })
+      document.querySelector(`[data-authordescr = "${author}"]`).classList.add('is-visual')
+
+  })
+
+  })
+  
   //клик на кнопку все события
   document.querySelector('.events__btn').addEventListener('click', function (event) {
 
@@ -127,7 +147,6 @@ window.addEventListener('DOMContentLoaded', function () {
         required: true,
         function(name, value) {
           const phone = selector.inputmask.unmaskedvalue()
-          console.log(phone)
           return Number(phone) && phone.length === 10
         }
       },
