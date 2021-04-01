@@ -173,8 +173,8 @@ img {
     display: flex;
     justify-content: space-between ; 
     align-items: center;
-    padding-left: 22px;
-    padding-right: 7px;
+    /* padding-left: 22px;
+    padding-right: 7px; */
  }
  .header__container--bottom {
     padding-right: 1px;
