@@ -4,7 +4,7 @@ $(function () {
     icons: false,
     collapsible: true,
     active: 0,
-    heightStyle: "fill",
+    heightStyle: "content",
   });
 });
 
@@ -34,7 +34,6 @@ window.addEventListener('DOMContentLoaded', function () {
   })
 
   //Клик на флаги
-  // document.querySelector('flag__link').focus()
   document.querySelector('.catalog-description').classList.add('is-visual')
   document.querySelectorAll('.flag__link').forEach(function (e) {
     
