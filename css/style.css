@@ -284,9 +284,15 @@ img {
      /* background-color: var(--color-hover) ; */
      width: 2px;
 } 
+/* .simplebar-scrollbar:hover {
+    background-color: var(--color-hover);
+} */
 .simplebar-content-wrapper {
     background-color: rgba(0, 0, 0, 0.4);
 }
+/* .simplebar-content.simplebar-scrollbar {
+    background-color: var(--color-hover) ;
+} */
 
 .banner-menu {
     display: flex;
@@ -433,6 +439,7 @@ img {
 
 .painters__link:hover {
     outline: 2px solid #7943A4;
+    color: white;
 }
 
 .banner-menu-site-search__line {
