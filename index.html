@@ -289,21 +289,33 @@
             <div class="container catalog-container ">
                 <div class="catalog-flag-country flag">
                     <h2 id="catalog" class="flag__heading reset-style">Каталог</h2>
-                    <button class="flag__link flag-active" data-flag="fr">
-                        <img class="flag__link1" src="img/flag4.png" alt="">
-                    </button>
-                    <button class="flag__link" data-flag="ger">
-                        <img class="flag__link1" src="img/image6.png" alt="">
-                    </button>
-                    <button class="flag__link" data-flag="ita">
-                        <img class="flag__link1" src="img/image7.png" alt="">
-                    </button>
-                    <button class="flag__link" data-flag="rus">
-                        <img class="flag__link1" src="img/image8.png" alt="">
-                    </button>
-                    <button class="flag__link" data-flag="bel">
-                        <img class="flag__link1" src="img/image5.png" alt="">
-                    </button>
+                    <ul class="flag-list">
+                        <li class="flag-item">
+                            <button class="flag__all flag--fr" data-flag="fr">
+                                <!-- flag-active <img class="flag__link1" src="img/flag4.png" alt=""> -->
+                            </button>
+                        </li>
+                        <li class="flag-item">
+                            <button class="flag__all flag--ger" data-flag="ger">
+                                <!-- <img class="flag__link1" src="img/image6.png" alt=""> -->
+                            </button>
+                        </li>
+                        <li class="flag-item">
+                            <button class="flag__all flag--ita" data-flag="ita">
+                                <!-- <img class="flag__link1" src="img/image7.png" alt=""> -->
+                            </button>
+                        </li>
+                        <li class="flag-item">
+                            <button class="flag__all flag--rus" data-flag="rus">
+                                <!-- <img class="flag__link1" src="img/image8.png" alt=""> -->
+                            </button>
+                        </li>
+                        <li class="flag-item">
+                            <button class="flag__link" data-flag="bel">
+                                <img class="flag__link1" src="img/image5.png" alt="">
+                            </button>
+                        </li>
+                    </ul>
                 </div>
                 <p class="catalog-description " data-descr="fr">
                     Actionnaires des plus grandes entreprises, qui sont un excellent exemple de l'Europe continentale
@@ -346,7 +358,7 @@
                     <div class="catalog-left flag">
                         <div class="catalog-left__painter-info is-visual" data-authordescr="Доменико Гирландайо">
                             <img class="catalog-left-img " src="img/image3.jpg" alt="">
-                            <h2 class="catalog-left-painter reset-style" >Доменико
+                            <h2 class="catalog-left-painter reset-style">Доменико
                                 Гирландайо</h2>
                             <span class="catalog-left-painter-life">2 июня 1448 — 11 января 1494.</span>
                             <p class="catalog-left-painter-description reset-style">
@@ -362,7 +374,7 @@
                         </div>
                         <div class="catalog-left__painter-info" data-authordescr="Бенедетто ди Биндо">
                             <img class="catalog-left-img " src="img/image3.jpg" alt="">
-                            <h2 class="catalog-left-painter reset-style" >Бенедетто ди Биндо</h2>
+                            <h2 class="catalog-left-painter reset-style">Бенедетто ди Биндо</h2>
                             <span class="catalog-left-painter-life">2 июня 1448 — 11 января 1494.</span>
                             <p class="catalog-left-painter-description reset-style">
                                 Один из ведущих флорентийских художников Кватроченто, основатель художественной
@@ -377,7 +389,7 @@
                         </div>
                         <div class="catalog-left__painter-info" data-authordescr="Амброджо Биссоло">
                             <img class="catalog-left-img " src="img/image3.jpg" alt="">
-                            <h2 class="catalog-left-painter reset-style" >Амброджо Биссоло</h2>
+                            <h2 class="catalog-left-painter reset-style">Амброджо Биссоло</h2>
                             <span class="catalog-left-painter-life">2 июня 1448 — 11 января 1494.</span>
                             <p class="catalog-left-painter-description reset-style">
                                 Один из ведущих флорентийских художников Кватроченто, основатель художественной
@@ -392,7 +404,7 @@
                         </div>
                         <div class="catalog-left__painter-info" data-authordescr="Франческо Больтраффио">
                             <img class="catalog-left-img " src="img/image3.jpg" alt="">
-                            <h2 class="catalog-left-painter reset-style" >Франческо Больтраффио</h2>
+                            <h2 class="catalog-left-painter reset-style">Франческо Больтраффио</h2>
                             <span class="catalog-left-painter-life">2 июня 1448 — 11 января 1494.</span>
                             <p class="catalog-left-painter-description reset-style">
                                 Один из ведущих флорентийских художников Кватроченто, основатель художественной
@@ -407,7 +419,7 @@
                         </div>
                         <div class="catalog-left__painter-info" data-authordescr="Джованни Бонсиньори">
                             <img class="catalog-left-img " src="img/image3.jpg" alt="">
-                            <h2 class="catalog-left-painter reset-style" >Джованни Бонсиньори</h2>
+                            <h2 class="catalog-left-painter reset-style">Джованни Бонсиньори</h2>
                             <span class="catalog-left-painter-life">2 июня 1448 — 11 января 1494.</span>
                             <p class="catalog-left-painter-description reset-style">
                                 Один из ведущих флорентийских художников Кватроченто, основатель художественной
@@ -419,7 +431,7 @@
                                 которых выпукло, со всевозможными подробностями показана домашняя жизнь библейских
                                 персонажей (в их роли выступают знатные граждане Флоренции в костюмах того времени).
                             </p>
-                        </div> 
+                        </div>
                     </div>
                     <div class="catalog-right">
                         <div id="accordion">
@@ -429,11 +441,17 @@
                             </h3>
                             <div class="catalog-right__painter painter">
                                 <ul class="painter__list">
-                                    <li class="painter__item " data-author="Бенедетто ди Биндо"> <a href="" class="painter__link">Бенедетто ди Биндо </a> </li>
-                                    <li class="painter__item" data-author="Амброджо Биссоло"> <a  href="#" class="painter__link">Амброджо Биссоло</a> </li>
-                                    <li class="painter__item " data-author="Доменико Гирландайо"> <a  href="#" class="painter__link activ">Доменико Гирландайо</a></li>                                    </li>
-                                    <li class="painter__item" data-author="Франческо Больтраффио"> <a href="#" class="painter__link">Франческо Больтраффио</a></li>
-                                    <li class="painter__item" data-author="Джованни Бонсиньори"> <a href="#" class="painter__link">Джованни Бонсиньори</a></li>
+                                    <li class="painter__item " data-author="Бенедетто ди Биндо"> <a href=""
+                                            class="painter__link">Бенедетто ди Биндо </a> </li>
+                                    <li class="painter__item" data-author="Амброджо Биссоло"> <a href="#"
+                                            class="painter__link">Амброджо Биссоло</a> </li>
+                                    <li class="painter__item " data-author="Доменико Гирландайо"> <a href="#"
+                                            class="painter__link activ">Доменико Гирландайо</a></li>
+                                    </li>
+                                    <li class="painter__item" data-author="Франческо Больтраффио"> <a href="#"
+                                            class="painter__link">Франческо Больтраффио</a></li>
+                                    <li class="painter__item" data-author="Джованни Бонсиньори"> <a href="#"
+                                            class="painter__link">Джованни Бонсиньори</a></li>
                                 </ul>
                             </div>
                             <h3 class="catalog-right__period">

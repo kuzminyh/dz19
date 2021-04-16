@@ -114,10 +114,10 @@ window.addEventListener('DOMContentLoaded', function () {
     e.classList.add('anim')
     e.classList.add('anim-click')
   })
-  document.querySelectorAll('button').forEach(function (e) {
-    e.classList.add('anim')
-    e.classList.add('anim-click')
-  })
+  // document.querySelectorAll('button').forEach(function (e) {
+  //   e.classList.add('anim')
+  //   e.classList.add('anim-click')
+  // })
 
   document.querySelectorAll('.anim').forEach(function (e) {
     e.addEventListener('click', function (el) {

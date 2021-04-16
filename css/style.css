@@ -888,9 +888,84 @@ img {
       display: flex;
       margin-right: 1px;
       justify-content: space-between;
-
-     
   }
+  .flag-list {
+      width: 65%;
+      display: flex;
+      justify-content: space-between;
+  }
+  .flag-item {
+      position: relative;
+      width: 66px;
+      height: 66px;
+  }
+  .flag-item::before {
+    content: '';
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    border-radius: 50%;
+    border: 1px solid var(--color-hover);  
+  }
+  .flag__all {
+    position: relative;
+    width: 46px;
+    height: 46px;
+    background: none;
+    outline: none;
+    border: none;
+  }
+  .flag__fr {
+    /* position: relative;
+    z-index: 5; */
+  }
+  .flag__all::before {
+      content: '';
+      position: absolute;
+      top: 0;
+      left: 0;
+      width: 100%;
+      height: 100%;
+      border-radius: 50%;
+      border: 1px solid var(--color-hover);
+      /* transform: translateX(-12px); */
+  } 
+  .flag__all::after {
+    content: '';
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-position: center;
+    background-repeat: no-repeat;
+  }
+.flag--fr::after {
+    background-image: url(../img/flag4.png);
+}   
+.flag--ger::after {
+    background-image: url(../img/image6.png);
+} 
+.flag--ita::after {
+    background-image: url(../img/image7.png);
+} 
+.flag--rus::after {
+    background-image: url(../img/image8.png);
+} 
+
+/* 
+  content: '';
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background-image: url(../img/flag1.svg);
+  background-position: center;
+  background-repeat: no-repeat; */
+
   .flag__link {
       display: flex;
       width: 66px;
