@@ -914,11 +914,10 @@ img {
     opacity: 0;
     transition: opacity .3s ease-in-out;
   }
-
-  /* .flag-item:hover::before {
+  .flag-item:hover::before {
       opacity: 1;
       transition: opacity .3s ease-in-out;
-  } */
+  }
   .flag__all {
     position: relative;
     width: 46px;
@@ -927,41 +926,21 @@ img {
     outline: none;
     border: none;
   }
-  
- /* .flag__item-active::before {
-    border-radius: 50%;
-    border: 1px solid var(--color-hover);  
-    transition: opacity .3s ease-in-out;
-    opacity: 0;
- }
- .flag__item-active:focus::before {
-    opacity: 1;
-} */
- .flag__item-active {
-    border-radius: 50%;
-    border: 1px solid var(--color-hover);  
-    transition: opacity .3s ease-in-out;
- }
-
- /* .flag__all:active {
-    border: 3px solid var(--color-hover); 
- } */
- .flag__all::before {
-      content: '';
+  .flag__fr {
+    /* position: relative;
+    z-index: 5; */
+  }
+  .flag__all::before {
+      /* content: '';
       position: absolute;
       top: 0;
       left: 0;
       width: 100%;
       height: 100%;
-      border-radius: 50%; 
-      border: 2px solid var(--color-hover); 
-      transform: translate(-2px , -2px);
-      opacity: 0;
-      transition: opacity .3s ease-in-out;
-     } 
-  .flag__all:active::before {
-      opacity: 1;
-  }  
+      border-radius: 50%; */
+      /* border: 1px solid var(--color-hover); */
+      /* transform: translateX(-12px); */
+  } 
   .flag__all::after {
     content: '';
     position: absolute;
@@ -983,9 +962,6 @@ img {
 } 
 .flag--rus::after {
     background-image: url(../img/image8.png);
-} 
-.flag--bel::after {
-    background-image: url(../img/image5.png);
 } 
 
 /* 

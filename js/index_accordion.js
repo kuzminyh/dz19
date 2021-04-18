@@ -61,6 +61,33 @@ window.addEventListener('DOMContentLoaded', function () {
     })
   })
 
+    //Клик на флаги
+  document.querySelectorAll('.flag__all').forEach(function (e) {
+     e.addEventListener('click', function (event) {
+         document.querySelectorAll('.flag__item-active').forEach(function(e){
+           console.log(e)
+           e.classList.remove('flag__item-active')
+         })
+         event.target.parentElement.classList.add('flag__item-active')  
+         document.querySelectorAll('.catalog-description').forEach(function (e) {
+         e.classList.remove('is-visual')
+        })
+        const flag = event.currentTarget.dataset.flag
+        document.querySelectorAll('.catalog-description').forEach(function (e) {
+          e.classList.remove('is-visual')
+        })
+        document.querySelector(`[data-descr="${flag}"]`).classList.add('is-visual')
+        document.querySelector('.catalog-right').classList.add('no-visual')
+         document.querySelector('.catalog-left').classList.add('no-visual')
+        setTimeout(function(){
+          document.querySelector('.catalog-right').classList.remove('no-visual')
+        },1000) 
+        setTimeout(function(){
+          document.querySelector('.catalog-left').classList.remove('no-visual')
+        },1000) 
+      })
+    })
+
   //Клик на художника в акордеоне
   document.querySelectorAll('.painter__item').forEach(function(e){
      
