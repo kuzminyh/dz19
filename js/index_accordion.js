@@ -92,7 +92,7 @@ window.addEventListener('DOMContentLoaded', function () {
   document.querySelectorAll('.painter__item').forEach(function(e){
      
      e.addEventListener('click', function(event){
-       document.querySelectorAll('.painter__link').forEach(function(e){
+       document.querySelectorAll('.painter__btn').forEach(function(e){
          e.classList.remove('activ')
        })
       event.target.classList.add('activ')

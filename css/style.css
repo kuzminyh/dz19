@@ -764,7 +764,7 @@ img {
     border: 2px solid var(--color-active);
 }
 .swiper-pagination-custom {
-    width: 47px;
+    width: auto;
     color: var(--color-text);
     bottom: 0px;
     font-size: 16px;
@@ -1104,9 +1104,15 @@ img {
       justify-content: space-between;
   }
   .catalog-right {
-      width: 800px;
+         width: 800px;
       opacity: 1;
       transition: opacity .3s ease-in-out ;  
+}
+.ui-state-hover .catalog-right-link  {
+    color: var(--color-hover) !important;
+}
+.ui-state-hover .accord-close {
+    background-image: url(../img/close-hover.png);
 }
  
 .painter__item {
@@ -1117,17 +1123,34 @@ img {
     letter-spacing: 0em;
     text-align: left;
 }
-
- .painter__link:hover::before {
+ .ui-widget button {
+    font-family: 'Open Sans';
+    font-size: 16px;
+    font-style: normal;
+    font-weight: 400;
+    letter-spacing: 0em;
+    text-align: left;
+}
+ .painter__btn {
+     
+     position: relative;
+     border: none;
+     outline: none;
+     background: none;
+ }
+.painter__btn:hover {
+    color: var(--color-hover);
+}
+ .painter__btn:hover::before {
     opacity: 1;
  }
- .painter__link:active::before {
+ .painter__btn:active::before {
     opacity: 0;
  }
- .painter__link:focus::before {
+ .painter__btn:focus::before {
     opacity: 0;
  }
- .painter__link::before{
+ .painter__btn::before{
     position: absolute; 
     content: '';
     opacity: 0; 
@@ -1232,6 +1255,12 @@ img {
    border-radius: 0;
    padding: 0;
 }
+.ui-accordion .ui-accordion-content .ui-state-hover {
+    border-bottom: 1px solid var(--color-active);
+    border-top:    1px solid var(--color-active);
+    border-radius: 0;
+    padding: 0;
+ }
 
 .ui-state-focus {
     outline: none  ;
