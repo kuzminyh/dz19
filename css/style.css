@@ -872,6 +872,7 @@ img {
   }
   .catalog-flag-country {
       max-width: 660px;
+      margin-bottom: 30px;
   }
 
   .flag__heading {
@@ -1038,10 +1039,10 @@ img {
   }
   .catalog-description {
     display: none;
-    margin-top: 15px;
+    margin-top: 0;
     margin-bottom: 48px;
     width: 1080px;
-    height: 117px;
+    height: 118px;
     overflow: hidden;
     font-size: 16px;
     font-style: normal;
@@ -1081,7 +1082,6 @@ img {
   }
   .catalog-left-painter-description {
     margin-left: 8px; 
-    max-height: 227px;
     max-width: 749px;
     font-size: 16px;
     font-style: normal;
@@ -1204,6 +1204,7 @@ img {
     outline: none;
 }
 .catalog-right__period  {
+    position: relative;
     height: 113px;
     font-size: 24px;
     font-style: normal;
@@ -1219,6 +1220,26 @@ img {
 	padding-bottom: 33px;
 	border-bottom: none;
 }
+.catalog-right__period::after {
+    content: '';
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    border-top: 1px solid var(--color-hover);
+    border-bottom: 1px solid var(--color-hover);
+    opacity: 0;
+    transition: opacity .3s ease-in-out ;
+    margin-top: -2px;
+}
+.catalog-right__period:hover::after {
+    opacity: 1;
+}
+.catalog-right__period:hover {
+    border: none;
+}
+
 
 .ui-accordion {
     border-bottom: 1px solid #cacaca;

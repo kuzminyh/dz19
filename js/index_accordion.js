@@ -36,14 +36,14 @@ window.addEventListener('DOMContentLoaded', function () {
   //Клик на флаги
   document.querySelector('.catalog-description').classList.add('is-visual')
   document.querySelectorAll('.flag__link').forEach(function (e) {
-    
+
     e.addEventListener('click', function (event) {
-       document.querySelectorAll('.flag-active').forEach(function(e){
-         e.classList.remove('flag-active')
-       })
-       event.target.parentElement.classList.add('flag-active')  
-       document.querySelectorAll('.catalog-description').forEach(function (e) {
-       e.classList.remove('is-visual')
+      document.querySelectorAll('.flag-active').forEach(function (e) {
+        e.classList.remove('flag-active')
+      })
+      event.target.parentElement.classList.add('flag-active')
+      document.querySelectorAll('.catalog-description').forEach(function (e) {
+        e.classList.remove('is-visual')
       })
       const flag = event.currentTarget.dataset.flag
       document.querySelectorAll('.catalog-description').forEach(function (e) {
@@ -51,50 +51,50 @@ window.addEventListener('DOMContentLoaded', function () {
       })
       document.querySelector(`[data-descr="${flag}"]`).classList.add('is-visual')
       document.querySelector('.catalog-right').classList.add('no-visual')
-       document.querySelector('.catalog-left').classList.add('no-visual')
-      setTimeout(function(){
+      document.querySelector('.catalog-left').classList.add('no-visual')
+      setTimeout(function () {
         document.querySelector('.catalog-right').classList.remove('no-visual')
-      },1000) 
-      setTimeout(function(){
+      }, 1000)
+      setTimeout(function () {
         document.querySelector('.catalog-left').classList.remove('no-visual')
-      },1000) 
+      }, 1000)
     })
   })
 
-    //Клик на флаги
+  //Клик на флаги
   document.querySelectorAll('.flag__all').forEach(function (e) {
-     e.addEventListener('click', function (event) {
-         document.querySelectorAll('.flag__item-active').forEach(function(e){
-           console.log(e)
-           e.classList.remove('flag__item-active')
-         })
-         event.target.parentElement.classList.add('flag__item-active')  
-         document.querySelectorAll('.catalog-description').forEach(function (e) {
-         e.classList.remove('is-visual')
-        })
-        const flag = event.currentTarget.dataset.flag
-        document.querySelectorAll('.catalog-description').forEach(function (e) {
-          e.classList.remove('is-visual')
-        })
-        document.querySelector(`[data-descr="${flag}"]`).classList.add('is-visual')
-        document.querySelector('.catalog-right').classList.add('no-visual')
-         document.querySelector('.catalog-left').classList.add('no-visual')
-        setTimeout(function(){
-          document.querySelector('.catalog-right').classList.remove('no-visual')
-        },1000) 
-        setTimeout(function(){
-          document.querySelector('.catalog-left').classList.remove('no-visual')
-        },1000) 
+    e.addEventListener('click', function (event) {
+      document.querySelectorAll('.flag__item-active').forEach(function (e) {
+        console.log(e)
+        e.classList.remove('flag__item-active')
       })
+      event.target.parentElement.classList.add('flag__item-active')
+      document.querySelectorAll('.catalog-description').forEach(function (e) {
+        e.classList.remove('is-visual')
+      })
+      const flag = event.currentTarget.dataset.flag
+      document.querySelectorAll('.catalog-description').forEach(function (e) {
+        e.classList.remove('is-visual')
+      })
+      document.querySelector(`[data-descr="${flag}"]`).classList.add('is-visual')
+      document.querySelector('.catalog-right').classList.add('no-visual')
+      document.querySelector('.catalog-left').classList.add('no-visual')
+      setTimeout(function () {
+        document.querySelector('.catalog-right').classList.remove('no-visual')
+      }, 1000)
+      setTimeout(function () {
+        document.querySelector('.catalog-left').classList.remove('no-visual')
+      }, 1000)
     })
+  })
 
   //Клик на художника в акордеоне
-  document.querySelectorAll('.painter__item').forEach(function(e){
-     
-     e.addEventListener('click', function(event){
-       document.querySelectorAll('.painter__btn').forEach(function(e){
-         e.classList.remove('activ')
-       })
+  document.querySelectorAll('.painter__item').forEach(function (e) {
+
+    e.addEventListener('click', function (event) {
+      document.querySelectorAll('.painter__btn').forEach(function (e) {
+        e.classList.remove('activ')
+      })
       event.target.classList.add('activ')
       event.preventDefault()
       const author = event.currentTarget.dataset.author
@@ -103,10 +103,10 @@ window.addEventListener('DOMContentLoaded', function () {
       })
       document.querySelector(`[data-authordescr = "${author}"]`).classList.add('is-visual')
 
-  })
+    })
 
   })
-  
+
   //клик на кнопку все события
   document.querySelector('.events__btn').addEventListener('click', function (event) {
 
@@ -115,6 +115,24 @@ window.addEventListener('DOMContentLoaded', function () {
     })
     event.target.classList.toggle('no-visibility')
     console.log(event.target.classList)
+  })
+  //Клик на периоды в каталоге
+  document.querySelectorAll('.catalog-right__period').forEach(function (e) {
+    e.addEventListener('click', function (event) {
+      if (event.target.children[1].classList.contains('accord-open')) {
+        event.target.children[1].classList.remove('accord-open')
+        event.target.children[1].classList.add('accord-close')
+      }
+      else {
+        document.querySelectorAll('.accord-open').forEach(function (el) {
+          el.classList.remove('accord-open')
+          el.classList.add('accord-close')
+        })
+        event.target.children[1].classList.add('accord-open')
+        event.target.children[1].classList.remove('accord-close')
+      }
+      console.log('event.target=', event.target.children[1])
+    })
   })
   //Клик на периоды в каталоге
   document.querySelectorAll('.accord-close, .accord-open').forEach(function (e) {
