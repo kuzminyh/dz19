@@ -319,9 +319,9 @@ img {
      /* background-color: var(--color-hover) ; */
      width: 2px;
 } 
-/* .simplebar-scrollbar:hover {
+ .simplebar-scrollbar--hover {
     background-color: var(--color-hover);
-} */
+} 
 .simplebar-content-wrapper {
     background-color: rgba(0, 0, 0, 0.4);
 }

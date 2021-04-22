@@ -15,6 +15,16 @@ window.addEventListener('DOMContentLoaded', function () {
         document.querySelector('.header__burger-menu').classList.toggle('burger__visual')
 
   })
+  //стилизация скролбара в хэдере
+  document.querySelectorAll('.painters__link').forEach(function(e){
+     e.addEventListener('hover',function(){
+       alert(5)
+       document.querySelectorAll('.simplebar-scrollbar ').forEach(function(e){
+         e.classList.add('simplebar-scrollbar--hover')
+          alert(6)
+       })
+     })
+  })
   //Вывод выпадающего меню в headere
   document.querySelectorAll('.menu__btn').forEach(function (e) {
     e.addEventListener('click', function (event) {
