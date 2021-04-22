@@ -147,7 +147,7 @@ img {
     opacity: 0 !important;
 }
 /*header*/
-.burger {
+.burger-btn {
     display: none;
     background-image: url(../img/Burger.png);
     background-size: contain;
@@ -156,6 +156,40 @@ img {
     background-repeat: no-repeat;
     background-color: inherit;
     border: none;
+}
+.burger-btn:focus
+.burger-btn:hover
+{
+    outline: none;
+}
+.header__burger-menu.burger__visual {
+    transform: none;
+}
+.burger__list {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+    height: 100%;
+}
+.header__burger-menu {
+    /* display: none; */
+    position: absolute;
+    padding: 20px;
+    z-index: 5;
+    top: 0;
+    left: 80px;
+    width: 200px;
+    height: 300px;
+    font-size: 18px;
+    background-color: black;
+    transition: transform .3s ease-in-out;
+    transform: translateY(-900px); 
+}
+.burger__visual {
+    /* display: block; */
+}
+.burger__link {
+    color: white;
 }
 .header {
    position: absolute;
@@ -170,6 +204,7 @@ img {
 
 .header__container {
     display: flex;
+    position: relative;
     justify-content: space-between ; 
     align-items: center;
  }
@@ -1977,7 +2012,7 @@ background-color: #000000; */
     background-image: url("../img/facebook.png");
 }
 @media (max-width: 1024px) {
- .burger {
+ .burger-btn {
     display: block;
  }
  .header__list {

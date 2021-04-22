@@ -9,6 +9,12 @@ $(function () {
 });
 
 window.addEventListener('DOMContentLoaded', function () {
+  //клик на бюргер
+  document.querySelector('.burger-btn').addEventListener('click',function(event){
+        // console.log(event.target)
+        document.querySelector('.header__burger-menu').classList.toggle('burger__visual')
+
+  })
   //Вывод выпадающего меню в headere
   document.querySelectorAll('.menu__btn').forEach(function (e) {
     e.addEventListener('click', function (event) {
