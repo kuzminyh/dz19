@@ -561,13 +561,11 @@ img {
 
  /* section-about-us*/
  .about-us-container {
-     padding-top: 80px;
+     padding-top: 120px;
      padding-left: 20px;
-     /* padding: 0 18px; */
  }
  .section-about-us-heading {
-    /* margin-top: 80px; */
-    margin-bottom: 15px;
+    margin-bottom: 31px;
     font-size: 48px;
     font-style: normal;
     font-weight: 400;
@@ -576,9 +574,7 @@ img {
  }
  .section-about-us-description {
     max-width: 1080px;
-    /* margin-left: 159px; */
     margin-bottom: 78px;
-    height: 214px;
     font-size: 16px;
     font-style: normal;
     font-weight: 400;
