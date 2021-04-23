@@ -17,11 +17,14 @@ window.addEventListener('DOMContentLoaded', function () {
   })
   //стилизация скролбара в хэдере
   document.querySelectorAll('.painters__link').forEach(function(e){
-     e.addEventListener('hover',function(){
-       alert(5)
-       document.querySelectorAll('.simplebar-scrollbar ').forEach(function(e){
+     e.addEventListener('mouseout',function(){
+         document.querySelectorAll('.simplebar-scrollbar ').forEach(function(e){
+         e.classList.remove('simplebar-scrollbar--hover')
+       })
+     })
+     e.addEventListener('mouseover',function(){
+         document.querySelectorAll('.simplebar-scrollbar ').forEach(function(e){
          e.classList.add('simplebar-scrollbar--hover')
-          alert(6)
        })
      })
   })

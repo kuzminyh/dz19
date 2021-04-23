@@ -157,7 +157,7 @@ img {
     background-color: inherit;
     border: none;
 }
-.burger-btn:focus
+.burger-btn:focus,
 .burger-btn:hover
 {
     outline: none;
