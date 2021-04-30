@@ -314,20 +314,26 @@ img {
     background-size: cover;
 }
 
+
+/* .simplebar-scrollbar::before {
+     background-color: red; 
+} */
 .simplebar-scrollbar {
-    background-color: white;
-     /* background-color: var(--color-hover) ; */
+    background-color:  black; 
      width: 2px;
 } 
+/* .simplebar-track {
+    color: blanchedalmond;
+} */
  .simplebar-scrollbar--hover {
     background-color: var(--color-hover);
-} 
+}  
+
 .simplebar-content-wrapper {
     background-color: rgba(0, 0, 0, 0.4);
 }
-/* .simplebar-content.simplebar-scrollbar {
-    background-color: var(--color-hover) ;
-} */
+
+
 
 .banner-menu {
     display: flex;
