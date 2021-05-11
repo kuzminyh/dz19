@@ -367,6 +367,9 @@ img {
 .banner-search:hover > input {
     border-bottom: 1px solid var(--color-hover);
 }
+.banner-search {
+    padding-right: 7px;
+}
 
 .banner-search:hover .banner-search_magnifier {
     fill: var(--color-hover);
