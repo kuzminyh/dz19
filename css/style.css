@@ -318,7 +318,11 @@ img {
 /* .simplebar-scrollbar::before {
      background-color: red; 
 } */
+.simplebar-track.simplebar-vertical {
+    width: 20px;
+}
 .simplebar-scrollbar {
+    padding-top: 50px;
     background-color:  black; 
      width: 2px;
 } 
